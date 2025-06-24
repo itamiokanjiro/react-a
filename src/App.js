@@ -1,10 +1,11 @@
 /*
 import logo from './logo.svg';
 */
-import CookieSetter from './CookieSetter';
-import Hello from './Hello';
+import CookieSetter from './scripts/CookieSetter';
+import Hello from './scripts/Hello';
 import './App.css';
-import CookieReader from './CookieReader';
+import CookieReader from './scripts/CookieReader';
+import AuthSwitch from './scripts/AuthSwitch';
 function App() {
   return (
     <div className="App">
@@ -29,6 +30,8 @@ function App() {
         <CookieReader cookieName="myToken" />
         <h1>Cookie 測試</h1>
         <CookieSetter />
+        <h1>登入系統</h1>
+        <AuthSwitch />
       </header>
 
     </div>
