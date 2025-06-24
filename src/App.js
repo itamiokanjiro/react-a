@@ -1,6 +1,10 @@
+/*
 import logo from './logo.svg';
+*/
+import CookieSetter from './CookieSetter';
+import Hello from './Hello';
 import './App.css';
-
+import CookieReader from './CookieReader';
 function App() {
   return (
     <div className="App">
@@ -19,8 +23,17 @@ function App() {
           Learn React
         </a>
         */}
+        <Hello name="名稱" />
+        <Hello name="React新手" />
+        <h1>讀取 Cookie 範例</h1>
+        <CookieReader cookieName="myToken" />
+        <h1>Cookie 測試</h1>
+        <CookieSetter />
       </header>
+
     </div>
+    
+    
   );
 }
 
