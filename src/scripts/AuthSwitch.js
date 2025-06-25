@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import LoginForm from './LoginForm';
-import LogoutButton from './LogoutButton';
 import RegisterForm from './RegisterForm';
+import Dashboard from './Dashboard'; // ← 新增登入後主介面組件
+
 
 function AuthSwitch() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -26,7 +27,7 @@ function AuthSwitch() {
   }, [checkLogin]);
 
   if (isLoggedIn) {
-    return <LogoutButton onLogout={checkLogin} />;
+    return <Dashboard onLogout={checkLogin} />;
   }
 
   return (
